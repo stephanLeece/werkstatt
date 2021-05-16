@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 import { StyledH1, StyledH3, StyledP } from 'src/common/Typography/Typography.styled';
+import Phone from 'src/common/Icons/Phone';
+import Mail from 'src/common/Icons/Mail';
 
 const Wrap = styled.div`
   display: flex;
@@ -39,12 +41,20 @@ const MainBodyText = styled(StyledP)`
   column-gap: 24px;
 `;
 
-const ContactSection = styled.section`
+const ContactSectionOuter = styled.section`
   background-color: #333333;
-  display: flex;
-  justify-content: space-between;
   margin-top: auto;
   padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+`;
+
+const ContactSectionInner = styled.div`
+  background-color: #333333;
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 `;
 
 const ContactCard = styled.div`
@@ -53,9 +63,22 @@ const ContactCard = styled.div`
   max-width: 500px;
 `;
 
+const ContactCardLine = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+`;
+
 const ContactText = styled(StyledP)`
   color: #ffffff;
-  margin-bottom: 8px;
+`;
+
+const MailIcon = styled(Mail)`
+  margin-right: 8px;
+`;
+
+const PhoneIcon = styled(Phone)`
+  margin-right: 8px;
 `;
 
 export {
@@ -65,9 +88,13 @@ export {
   MainSection,
   MainHeaderText,
   MainBodyText,
-  ContactSection,
+  ContactSectionOuter,
+  ContactSectionInner,
   ContactCard,
+  ContactCardLine,
   ContactText,
+  MailIcon,
+  PhoneIcon,
 }
 
 

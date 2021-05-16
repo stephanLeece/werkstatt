@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Oxygen`,
+          `Work Sans`,
         ],
         display: 'swap'
       }

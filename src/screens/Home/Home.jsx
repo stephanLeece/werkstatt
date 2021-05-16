@@ -7,9 +7,13 @@ import {
   MainSection,
   MainHeaderText,
   MainBodyText,
-  ContactSection,
+  ContactSectionOuter,
+  ContactSectionInner,
   ContactCard,
-  ContactText
+  ContactCardLine,
+  ContactText,
+  MailIcon,
+  PhoneIcon
 } from "./Home.styled";
 
 const Home = () => (
@@ -50,16 +54,36 @@ const Home = () => (
         pariatur?"
       </MainBodyText>
     </MainSection>
-    <ContactSection>
-      <ContactCard><ContactText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.</ContactText></ContactCard>
-      <ContactCard><ContactText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.</ContactText></ContactCard>
-    </ContactSection>
+    <ContactSectionOuter>
+      <ContactSectionInner>
+      <ContactCard>
+          <ContactCardLine>
+            <ContactText>Name: name name</ContactText>
+          </ContactCardLine>
+          <ContactCardLine>
+            <MailIcon />
+            <ContactText>Mail: name name</ContactText>
+          </ContactCardLine>
+          <ContactCardLine>
+            <PhoneIcon />
+            <ContactText>Phone: name name</ContactText>
+          </ContactCardLine>
+        </ContactCard>
+        <ContactCard>
+          <ContactCardLine>
+            <ContactText>Name: name name</ContactText>
+          </ContactCardLine>
+          <ContactCardLine>
+            <MailIcon />
+            <ContactText>Mail: name name</ContactText>
+          </ContactCardLine>
+          <ContactCardLine>
+            <PhoneIcon />
+            <ContactText>Phone: name name</ContactText>
+          </ContactCardLine>
+        </ContactCard>
+      </ContactSectionInner>
+    </ContactSectionOuter>
   </Wrap>
 );
 

@@ -1,8 +1,11 @@
-const Mail = () => (
+import React from "react";
+
+const Mail = ({className}) => (
   <svg
+  className={className}
     xmlns="http://www.w3.org/2000/svg"
-    width="48px"
-    height="48px"
+    width="16px"
+    height="16px"
     viewBox="0 0 24 24"
     stroke="#ffffff"
     stroke-width="1"
