@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 import { StyledH1, StyledH3, StyledP } from 'src/common/Typography/Typography.styled';
-import Phone from 'src/common/Icons/Phone';
-import Mail from 'src/common/Icons/Mail';
+import Phone from 'src/common/icons/Phone';
+import Mail from 'src/common/icons/Mail';
 
 const Wrap = styled.div`
   display: flex;
