@@ -15,12 +15,12 @@ const StyledH3 = styled.h3`
 `;
 
 const StyledH4 = styled.h4`
-    font-size: 24px;
+    font-size: 12px;
     font-family: 'Oxygen', sans-serif;
 `;
 
 const StyledP = styled.p`
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Oxygen', sans-serif;
 `;
 
