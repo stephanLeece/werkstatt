@@ -40,7 +40,7 @@ const MainBodyText = styled(StyledP)`
 const ContactSectionOuter = styled.section`
   background-color: #333333;
   margin-top: auto;
-  padding: 24px 0 16px 0;
+  padding: 24px 12px 16px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
