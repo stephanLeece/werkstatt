@@ -11,7 +11,7 @@ const Wrap = styled.div`
 `;
 
 const Title = styled(StyledH1)`
-  margin: 24px 0;
+  margin: 24px 8px;
 `;
 
 const Divider = styled.div`
