@@ -1,25 +1,29 @@
 import React from "react";
 
+import HeaderImageSrc from "./Assets/bwHeaderImage.jpeg";
+import TeamImageSrc from "./Assets/bwTeamImage.jpeg";
+
 import {
   Wrap,
-  Title,
-  Divider,
+  HeroImage,
   MainSection,
   MainHeaderText,
   MainBodyText,
   ContactSectionOuter,
   ContactSectionInner,
   ContactHeaderText,
-  ContactBodyText
+  ContactBodyText,
+  TeamSection,
+  TeamImage,
+  TeamImageCredit
 } from "./Home.styled";
 
 const Home = () => (
   <Wrap>
-    <Title>DIE BEGEGNUNGS-WERKSTATT</Title>
-    <Divider />
+    <HeroImage src={HeaderImageSrc} alt="Begegnungs-Werkstatt" />
     <MainSection>
       <MainHeaderText>
-        Wir laden ein, eine Welt ohne Spaltungen mitzugestalten!
+        Wir laden euch ein, gemeinsam eine Welt ohne Spaltungen zu gestalten!
       </MainHeaderText>
       <MainBodyText>
         UNSERE TÄGLICHE ARBEIT:
@@ -58,6 +62,10 @@ const Home = () => (
         <br />
       </MainBodyText>
     </MainSection>
+    <TeamSection>
+      <TeamImage src={TeamImageSrc} alt="Begegnungs-Werkstatt" />
+      <TeamImageCredit>Foto © Julia Christ</TeamImageCredit>
+    </TeamSection>
     <ContactSectionOuter>
       <ContactSectionInner>
         <ContactHeaderText>Kontakt</ContactHeaderText>

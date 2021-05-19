@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-import { StyledH1, StyledH3, StyledP } from 'src/common/Typography/Typography.styled';
+import { StyledH3, StyledP } from 'src/common/Typography/Typography.styled';
+
+import HeaderImage from './Assets/bwTeamBackground.jpg';
 
 const Wrap = styled.div`
   display: flex;
@@ -10,27 +12,25 @@ const Wrap = styled.div`
   min-height: 100vh;
 `;
 
-const Title = styled(StyledH1)`
-  margin: 24px 8px;
-`;
-
-const Divider = styled.div`
+const HeroImage = styled.img`
+  max-width: 1024px;
   width: 100%;
-  height: 24px;
-  background-color: #222222;
-  margin-bottom: 24px;
+  height: auto;
 `;
 
 const MainSection = styled.section`
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   max-width: 1024px;
   padding: 12px;
+  background: #d8d8d8;
 `;
 
 const MainHeaderText = styled(StyledH3)`
   color: #444444;
-  margin-bottom: 24px;
+  margin: 24px 0;
+  text-align: center;
 `;
 
 const MainBodyText = styled(StyledP)`
@@ -40,9 +40,7 @@ const MainBodyText = styled(StyledP)`
 const ContactSectionOuter = styled.section`
   background-color: #333333;
   margin-top: auto;
-  padding: 24px 12px 16px;
   width: 100%;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
 `;
@@ -52,6 +50,8 @@ const ContactSectionInner = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 24px 12px 16px;
+  box-sizing: border-box;
 `;
 
 const ContactHeaderText = styled(StyledH3)`
@@ -64,17 +64,41 @@ const ContactBodyText = styled(StyledP)`
   margin-bottom: 8px;
 `;
 
+const TeamSection = styled.section`
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(${HeaderImage});
+  padding: 24px 20%;
+  box-sizing: border-box;
+`;
+
+const TeamImage = styled.img`
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 24px;
+`;
+
+const TeamImageCredit = styled(StyledP)`
+  color: #222222;
+  align-self: flex-end;
+`;
 export {
   Wrap,
-  Title,
-  Divider,
+  HeroImage,
   MainSection,
   MainHeaderText,
   MainBodyText,
   ContactSectionOuter,
   ContactSectionInner,
   ContactHeaderText,
-  ContactBodyText
+  ContactBodyText,
+  TeamSection,
+  TeamImage,
+  TeamImageCredit,
 }
 
 
