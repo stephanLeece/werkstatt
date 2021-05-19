@@ -71,7 +71,7 @@ const TeamSection = styled.section`
   flex-direction: column;
   align-items: center;
   background-image: url(${HeaderImage});
-  padding: 24px 20%;
+  padding: 48px;
   box-sizing: border-box;
 `;
 
@@ -79,13 +79,14 @@ const TeamImage = styled.img`
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 `;
 
 const TeamImageCredit = styled(StyledP)`
   color: #222222;
   align-self: flex-end;
 `;
+
 export {
   Wrap,
   HeroImage,
